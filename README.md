@@ -2,9 +2,6 @@
 
 
 
-> [Demo](https://landing-page--itsron717.repl.co/)
-
-<img src="particle_demo/particle_demo.png"/>
 
 # Using the Template
 

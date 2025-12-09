@@ -69,14 +69,14 @@ body {
   width: 100%;
   text-align: center;
 }
-h2 {
+h1, h2 {
   text-transform: uppercase;
   font-size: 50px;
   font-weight: 120;
   color: #ffffff;
   letter-spacing: 0.05em;
 }
-h1::after {
+h1::after, h2::after {
   content: '';
   width: 80px;
   display: block;
@@ -91,29 +91,48 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
+/* Utility Classes replacing inline styles */
+.text-white { color: white; }
+.font-courier { font-family: 'Courier New', Courier, monospace; }
+.title-large { font-size: 32px; }
+.subtitle { font-size: 20px; }
+.hr-custom {
+  width: 100%;
+  background-color: #e83951;
+  border-color: #e83951;
+}
+.icon-link {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.icon-size-lg { font-size: 2em; }
+.icon-size-md { font-size: 1.85em; }
+
+
 @media only screen and (max-width: 1000px) {
-  h1 {
-    font-size: 15px;
+  h1, h2 {
+    font-size: 36px;
   }
 }
 
-@media only screen and (max-width: 100px) {
-  h1 {
-    font-size: 15px;
+@media only screen and (max-width: 768px) {
+  h1, h2 {
+    font-size: 28px;
   }
-  h1::after {
+  h1::after, h2::after {
     height: 8px;
   }
 }
 
-@media only screen and (max-width: 100px) {
+@media only screen and (max-width: 480px) {
   #intro {
     padding: 0 10px;
   }
-  h1 {
-    font-size: 15px;
+  h1, h2 {
+    font-size: 24px;
   }
-  h1::after {
+  h1::after, h2::after {
     height: 6px;
   }
   p {
@@ -124,11 +143,11 @@ p {
   }
 }
 
-@media only screen and (max-width: 100px) {
-  h1 {
-    font-size: 15px;
+@media only screen and (max-width: 320px) {
+  h1, h2 {
+    font-size: 20px;
   }
-  h1::after {
+  h1::after, h2::after {
     height: 4px;
   }
 }

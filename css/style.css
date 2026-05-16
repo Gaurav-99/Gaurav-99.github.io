@@ -113,6 +113,18 @@ img, picture, video, svg, iframe {
   font-size: 1.4em;
 }
 
+/* Social links row: keep icons and resume CTA on one line when space allows */
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Reset any vertical spacing added inline in HTML so items stay aligned */
+.social-links > div { margin-top: 0 !important; }
+
 /* Intro / Hero Section */
 #intro {
   min-height: 100vh;

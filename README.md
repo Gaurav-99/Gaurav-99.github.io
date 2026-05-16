@@ -12,16 +12,6 @@ This repository hosts a single-page personal website that showcases a resume and
 - Animated particle background using the jQuery `particleground` plugin (see `js/`)
 - Resume available in the `Resume/` folder
 
-## Run locally
-
-1. Open `index.html` directly in your browser (works for most use cases).
-2. Or serve the site from a simple HTTP server (recommended for testing scripts/plugins):
-
-```bash
-python -m http.server 8000
-# then visit http://localhost:8000
-```
-
 ## Repository structure
 
 - `index.html` — main page

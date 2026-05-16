@@ -7,7 +7,7 @@
   <title>Gaurav Joshi's Portfolio</title>
   <meta name="description"
     content="Portfolio of Gaurav Joshi, a computer science student passionate about programming and design.">
-  <meta name="keywords" content="Gaurav Joshi, Portfolio, Computer Science, Programming, Web Design">
+  <meta name="keywords" content="Gaurav Joshi, Portfolio, Computer Science, Programming, Web Design, C#, Unity">
   <meta property="og:title" content="Gaurav Joshi's Portfolio">
   <meta property="og:description"
     content="Portfolio of Gaurav Joshi, a computer science student passionate about programming and design.">
@@ -24,8 +24,14 @@
 </head>
 
 <body>
-  <div id="particles">
-    <div id="intro">
+  <!-- Fixed Background -->
+  <div id="particles"></div>
+
+  <!-- Scrollable Content -->
+  <div class="content-wrapper">
+
+    <!-- Hero Section -->
+    <header id="intro">
       <h1 class="text-white font-courier title-large">Hi I'm Gaurav Joshi</h1><br>
 
       <div class="intro-heading text-white font-courier subtitle">
@@ -44,32 +50,93 @@
           target="_blank" rel="noopener noreferrer">
           <i class="fa fa-file-pdf icon-size-md" title="Resume"></i>
         </a>
-
         <a href="https://www.linkedin.com/in/gaurav-joshi-a41686150/" class="icon-link" target="_blank"
           rel="noopener noreferrer">
           <i class="fab fa-linkedin icon-size-lg" title="LinkedIn profile"></i>
         </a>
-
         <a href="https://github.com/Gaurav-99" class="icon-link" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-github icon-size-lg" title="Github profile"></i>
         </a>
-
         <a href="https://leetcode.com/nvr_gp/" class="icon-link" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-leetcode" title="Leetcode profile" class="icon-size-lg"></i>
+          <i class="fab fa-leetcode icon-size-lg" title="Leetcode profile"></i>
         </a>
-
         <a href="https://stackoverflow.com/users/11782328/gaurav-joshi?tab=profile" class="icon-link" target="_blank"
           rel="noopener noreferrer">
           <i class="fab fa-stack-overflow icon-size-lg" title="Stackoverflow profile"></i>
         </a>
-
         <a href="https://www.hackerrank.com/profile/gj0189634" class="icon-link" target="_blank"
           rel="noopener noreferrer">
           <i class="fab fa-hackerrank icon-size-lg" title="Hackerrank profile"></i>
         </a>
       </div>
 
-    </div>
+      <div class="scroll-down-indicator">
+        <p>Scroll for Timeline</p>
+        <i class="fa fa-chevron-down"></i>
+      </div>
+    </header>
+
+    <!-- Timeline Section -->
+    <section id="timeline-section">
+      <h2 class="section-title text-white font-courier">My Journey</h2>
+
+      <div class="timeline">
+
+        <!-- Item 1: Current Projects -->
+        <div class="container left">
+          <div class="content">
+            <h2 class="text-white">Current Projects</h2>
+            <p class="text-white">Developing advanced systems using C# and Unity.</p>
+            <ul class="text-white" style="list-style-type: disc; margin-left: 20px;">
+              <li>Project A: Description here...</li>
+              <li>Project B: Description here...</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 2: Last Employment -->
+        <div class="container right">
+          <div class="content">
+            <h2 class="text-white">Last Employment</h2>
+            <h3 class="text-white" style="font-size: 18px;">Software Engineer - Company Name</h3>
+            <p class="text-white">Worked on...</p>
+          </div>
+        </div>
+
+        <!-- Item 3: Internships -->
+        <div class="container left">
+          <div class="content">
+            <h2 class="text-white">Internships</h2>
+            <h3 class="text-white" style="font-size: 18px;">Intern - Company Name</h3>
+            <p class="text-white">Gained experience in...</p>
+          </div>
+        </div>
+
+        <!-- Item 4: College -->
+        <div class="container right">
+          <div class="content">
+            <h2 class="text-white">College</h2>
+            <h3 class="text-white" style="font-size: 18px;">Degree Name</h3>
+            <p class="text-white">University Name | Year - Year</p>
+          </div>
+        </div>
+
+        <!-- Item 5: School -->
+        <div class="container left">
+          <div class="content">
+            <h2 class="text-white">School</h2>
+            <h3 class="text-white" style="font-size: 18px;">Your School</h3>
+            <p class="text-white">Grade / High School | Year - Year</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="text-white" style="text-align: center; padding: 20px;">
+      <p>&copy; 2025 Gaurav Joshi</p>
+    </footer>
+
   </div>
 </body>
 

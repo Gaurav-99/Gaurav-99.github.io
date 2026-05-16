@@ -136,6 +136,9 @@ img, picture, video, svg, iframe {
 .social-links::-webkit-scrollbar { height: 6px; }
 .social-links::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 6px; }
 
+/* Explicit sizing for social icons (images) handled in CSS instead of inline attributes */
+.social-links img.icon-size-lg { width: 28px; height: 28px; object-fit: contain; }
+
 /* Intro / Hero Section */
 #intro {
   min-height: 100vh;

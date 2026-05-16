@@ -54,7 +54,8 @@ h2 {
 }
 
 .font-courier {
-  font-family: 'Courier New', Courier, monospace;
+  /* Use the page's primary font for visual consistency */
+  font-family: inherit;
 }
 
 .title-large {

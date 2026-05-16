@@ -219,7 +219,8 @@ img, picture, video, svg, iframe {
   left: -16px;
 }
 
-/* The actual content */
+
+/* The actual content (combined rules + enter animation) */
 .content {
   padding: 20px 30px;
   background: var(--panel);
@@ -229,10 +230,7 @@ img, picture, video, svg, iframe {
   border-radius: 10px;
   text-align: left;
   box-shadow: 0 8px 24px rgba(0,0,0,0.45);
-}
-
-/* Scroll enter animations */
-.content {
+  /* Scroll enter animations */
   opacity: 0;
   transform: translateY(18px) scale(0.995);
   transition: opacity 460ms cubic-bezier(.2,.8,.2,1), transform 460ms cubic-bezier(.2,.8,.2,1);
@@ -308,4 +306,10 @@ img, picture, video, svg, iframe {
   .subtitle { font-size: 14px; max-width: 100%; padding: 0 8px; }
   .icon-link { margin: 0 8px; }
   .timeline { padding: 0 10px; }
+}
+
+/* Small-screen timeline & circle tweaks to avoid overflow */
+@media screen and (max-width: 420px) {
+  .container { padding-left: 60px; padding-right: 12px; }
+  .container::after { width: 18px; height: 18px; left: 10px; border-width: 3px; right: auto; top: 18px; }
 }

@@ -137,7 +137,9 @@ img, picture, video, svg, iframe {
 .social-links::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 6px; }
 
 /* Explicit sizing for social icons (images) handled in CSS instead of inline attributes */
-.social-links img.icon-size-lg { width: 28px; height: 28px; object-fit: contain; }
+.social-links img.icon-size-lg { width: 24px; height: 24px; object-fit: contain; display: inline-block; vertical-align: middle; }
+/* Ensure social images don't become block-level (global img rule) and align with font icons */
+.social-links img { display: inline-block; }
 
 /* Intro / Hero Section */
 #intro {

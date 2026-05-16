@@ -98,6 +98,13 @@ h2 {
   color: var(--accent);
 }
 
+/* Make images and embedded media scale down on small screens */
+img, picture, video, svg, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .icon-size-lg {
   font-size: 1.6em;
 }
@@ -292,4 +299,13 @@ h2 {
   .subtitle {
     font-size: 16px;
   }
+}
+
+/* Extra small devices tweaks (phones ~320-420px) */
+@media screen and (max-width: 420px) {
+  .title-large { font-size: 20px; }
+  .section-title { font-size: 28px; padding-bottom: 6px; margin-bottom: 30px; }
+  .subtitle { font-size: 14px; max-width: 100%; padding: 0 8px; }
+  .icon-link { margin: 0 8px; }
+  .timeline { padding: 0 10px; }
 }

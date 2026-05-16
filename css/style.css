@@ -11,11 +11,19 @@
   box-sizing: border-box;
 }
 
+:root{
+  --accent: #f7931e;
+  --bg: #000010;
+  --panel: rgba(255,255,255,0.06);
+}
+
+html { font-size: 16px; }
+
 body {
-  background: #000010;
-  font-family: 'Montserrat', sans-serif;
+  background: var(--bg);
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
   color: #fff;
-  line-height: 1.3;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   /* Allow scrolling now */
   overflow-y: auto;
@@ -36,7 +44,7 @@ body {
 h1,
 h2 {
   text-transform: uppercase;
-  font-weight: 120;
+  font-weight: 600;
   color: #ffffff;
   letter-spacing: 0.05em;
 }
@@ -50,28 +58,30 @@ h2 {
 }
 
 .title-large {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .subtitle {
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .section-title {
   font-size: 40px;
   text-align: center;
   margin-bottom: 50px;
-  border-bottom: 2px solid #e83951;
+  border-bottom: 2px solid var(--accent);
   display: inline-block;
   padding-bottom: 10px;
 }
 
 .hr-custom {
   width: 100%;
-  background-color: #e83951;
-  border-color: #e83951;
+  background-color: var(--accent);
+  border-color: var(--accent);
   height: 1px;
   margin: 20px 0;
 }
@@ -84,15 +94,15 @@ h2 {
 }
 
 .icon-link:hover {
-  color: #e83951;
+  color: var(--accent);
 }
 
 .icon-size-lg {
-  font-size: 2em;
+  font-size: 1.6em;
 }
 
 .icon-size-md {
-  font-size: 1.85em;
+  font-size: 1.4em;
 }
 
 /* Intro / Hero Section */
@@ -204,17 +214,38 @@ h2 {
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: rgba(255, 255, 255, 0.1);
-  /* Glassy look */
+  background: var(--panel);
+  backdrop-filter: blur(6px);
+  /* Glassy look with depth */
   position: relative;
-  border-radius: 6px;
+  border-radius: 10px;
   text-align: left;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.45);
 }
 
 .content h2 {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 10px;
-  color: #e83951;
+  color: var(--accent);
+}
+
+/* Primary CTA button */
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+  font-weight: 600;
+}
+.btn-primary:hover{ transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
+
+/* Slightly smaller hero on mobile */
+@media screen and (max-width: 768px) {
+  .title-large { font-size: 28px; }
+  .subtitle { font-size: 15px; }
 }
 
 /* Media queries - Responsive timeline on screens less than 600px */

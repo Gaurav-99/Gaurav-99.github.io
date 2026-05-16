@@ -223,6 +223,17 @@ h2 {
   box-shadow: 0 8px 24px rgba(0,0,0,0.45);
 }
 
+/* Scroll enter animations */
+.content {
+  opacity: 0;
+  transform: translateY(18px) scale(0.995);
+  transition: opacity 460ms cubic-bezier(.2,.8,.2,1), transform 460ms cubic-bezier(.2,.8,.2,1);
+}
+.content.in-view {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
 .content h2 {
   font-size: 22px;
   margin-bottom: 10px;
